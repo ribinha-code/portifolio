@@ -1,0 +1,326 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url();
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+p,h2{
+    text-align: justify;
+    border:solid 1px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Margem{
+    margin: 10px 0 0 0px;
+}
+.Back{
+    text-align: center;
+    border:solid 19px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 25px;
+    width: 200px;
+    height: 150px;
+}
+.back{
+    text-align: center;
+    border: black;
+
+}
+.alinhamento{
+    display: flex;
+    justify-content: center;
+}
+.topico{
+        text-align: justify;
+}
+
+/* Seção "about" responsiva */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px 0;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-vetorial-realista-bolhas-de-sabao-de-agua-isolado-no-fundo-branco_134830-1517.jpg);
+    
+}
+
+.profile-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resume-image {
+    margin-top: 20px;
+}
+
+.resume-image img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Loader CSS */
+.loader {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #2a9d8f;
+    animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 7px;
+    width: 45px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+    animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+    0% {
+        transform: scale(1, 0.7);
+    }
+
+    40% {
+        transform: scale(0.8, 1.2);
+    }
+
+    60% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        bottom: 140px;
+    }
+}
+
+@keyframes loading-step {
+    0% {
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+            0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2;
+    }
+
+    100% {
+        box-shadow: 0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2,
+            -70px 90px 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* Cartão de redes sociais */
+.card {
+    width: fit-content;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* Containers sociais */
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* Redes sociais específicas */
+.containerOne:hover {
+    background-color: #d62976;
+}
+
+.containerTwo:hover {
+    background-color: #00acee;
+}
+
+.containerThree:hover {
+    background-color: #0072b1;
+}
+
+.containerFour:hover {
+    background-color: #128c35;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+/* Animação dos ícones sociais */
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .about-text, .profile-section {
+        flex: 1;
+        text-align: center;
+    }
+
+    .resume-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+    .alinhamento{
+        flex-direction: column;
+        align-items: center;
+    }
+}
